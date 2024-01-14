@@ -27,7 +27,7 @@ let velocity = 0,
 let turn_velocity = 0,
     turn_accel = Math.PI / 2048,
     turn_decel = Math.PI / 2048,
-    turn_max_vel = Math.PI / (128/2);
+    turn_max_vel = Math.PI;
     // turn_max_vel = Math.PI / 128;
 
 let m7 = new mode7({img_tag: img, canvas: canv});
