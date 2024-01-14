@@ -13,7 +13,7 @@ canv.height = img.height;
 
 let x = -img.width/2,
     y = img.height/2,
-    height = .1,
+    height = 3,
     horizon = img.height/2,
     theta = -320*Math.PI;
 
