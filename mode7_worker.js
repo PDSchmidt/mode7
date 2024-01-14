@@ -48,9 +48,9 @@ onmessage = (e)=>{
 
 function update(){
   if(running){
-    let out = new ImageData(image.width, image.height);
+    let out = new ImageData(1024, 768);
 
-    for(let i=4*image.width*horizon;i<out.data.length;i+=4){ /* i is set to this value to avoid iterating over every pixel above the horizon */
+    for(let i=4*1024*horizon;i<out.data.length;i+=4){ /* i is set to this value to avoid iterating over every pixel above the horizon */
       let y = Math.floor(i/(4*image.width));              /* y is the number of times x has wrapped -- out of order for performance reasons */
       if(y >= horizon){                                   /* avoiding unnecessary computation leads to a noticeable speed increase */
         let x = Math.floor((i/4)%image.width)-half_w,     /* x wraps around every time i/4 crosses this.w, must be centered around this.w/2 rather than 0 */
