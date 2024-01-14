@@ -14,7 +14,7 @@ canv.height = img.height;
 let x = -img.width/2,
     y = img.height/2,
     height = .1,
-    horizon = img.height/(img.height/4),
+    horizon = img.height/2,
     theta = -320*Math.PI;
 
 let keys = [];
